@@ -1,0 +1,15 @@
+project: test
+env: labs
+
+
+aws_account_id: "xyz"
+region: ap-southeast-1
+
+alb_ingress:
+  replicas: 2
+  namespace: kube-system
+  private_security_group: sg-xyz
+  certificate_arn: arn:aws:acm:ap-southeast-1:xyz:certificate/xyz-xyz-xyz-xyz-xyz
+  private_subnet1: subnet-xyz
+  private_subnet2: subnet-xyz
+  private_subnet3: subnet-xyz
